@@ -13,6 +13,7 @@ const Logo = () => {
 
 const styles = StyleSheet.create({
     titleText: {
+        color: '#FF5733',
         fontSize: 40,
         fontWeight: "bold"
     },
