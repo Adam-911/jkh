@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import logo from './assets/logo_test.png';
 import imgChat from './assets/Chat.png';
-import MenuBlock from './src/components/MenuBlock.js';
+import MenuBlock from './src/Components/MenuBlock.js';
 import Logo from './src/Components/Logo';
 
 export default function App() {
