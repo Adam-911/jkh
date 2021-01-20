@@ -2,33 +2,36 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import imgChat from '../../assets/Chat.png';
 
-const MenuBlock = () => {
+const MenuBlock = ({goTo}) => {
+
+  console.log(goTo);
+
     return (
         <View style={styles.root}>
           <View style={styles.viewMenu}>
-            <TouchableOpacity style={styles.viewCell}>
+            <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
               <Image source={imgChat} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Новости</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.viewCell}>
+            <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
               <Image source={imgChat} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Чаты</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.viewCell}>
+            <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
               <Image source={imgChat} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Об ОСИ/КСК</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.viewMenu}>
-            <TouchableOpacity style={styles.viewCell}>
+            <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
               <Image source={imgChat} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Учёт</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.viewCell}>
+            <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
               <Image source={imgChat} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Услуги</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.viewCell}>
+            <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
               <Image source={imgChat} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Голосование</Text>
             </TouchableOpacity>
