@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import logo from '../../assets/logo_test.png';
+import logo from '../../assets/logo_test_1.png';
 
 const Logo = () => {
     return (
@@ -13,7 +13,7 @@ const Logo = () => {
 
 const styles = StyleSheet.create({
     titleText: {
-        color: '#FF5733',
+        color: '#FF6600',
         fontSize: 40,
         fontWeight: "bold"
     },

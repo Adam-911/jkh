@@ -1,6 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import imgChat from '../../assets/Chat.png';
+import imgNews from '../../assets/news.png';
+import imgBill from '../../assets/bill.png';
+import imgServices from '../../assets/services.png';
+import imgAbout from '../../assets/about.png';
+import imgVote from '../../assets/vote.png';
 
 const MenuBlock = ({goTo}) => {
 
@@ -10,7 +15,7 @@ const MenuBlock = ({goTo}) => {
         <View style={styles.root}>
           <View style={styles.viewMenu}>
             <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
-              <Image source={imgChat} style={styles.blockMenuImg}/>
+              <Image source={imgNews} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Новости</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
@@ -18,21 +23,21 @@ const MenuBlock = ({goTo}) => {
               <Text style={styles.textMenu}>Чаты</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
-              <Image source={imgChat} style={styles.blockMenuImg}/>
+              <Image source={imgAbout} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Об ОСИ/КСК</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.viewMenu}>
             <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
-              <Image source={imgChat} style={styles.blockMenuImg}/>
+              <Image source={imgBill} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Учёт</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
-              <Image source={imgChat} style={styles.blockMenuImg}/>
+              <Image source={imgServices} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Услуги</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.viewCell} onPress={() => goTo("Test")}>
-              <Image source={imgChat} style={styles.blockMenuImg}/>
+              <Image source={imgVote} style={styles.blockMenuImg}/>
               <Text style={styles.textMenu}>Голосование</Text>
             </TouchableOpacity>
           </View>
@@ -57,7 +62,7 @@ const styles = StyleSheet.create({
     }, 
 
     viewCell: {
-        backgroundColor: '#FFC11C',
+        backgroundColor: '#FF9966',
         alignItems: 'center',
         margin: 8,
         borderRadius: 15
@@ -65,7 +70,10 @@ const styles = StyleSheet.create({
     },
 
     textMenu: {
-        paddingBottom: 5
+        paddingBottom: 5,
+        color: '#ffffff',
+        fontSize: 14,
+        fontWeight: 'bold'
     }
 });
 

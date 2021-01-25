@@ -25,7 +25,7 @@ MainScreen.navigationOptions = {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#F9F5E7',
+        backgroundColor: '#FFCC66',
         alignItems: 'center',
         justifyContent: 'center'
     }
